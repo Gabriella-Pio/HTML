@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Exibição responsiva em diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Estudos - Trilha HTML | DIO</title>
+</head>
+<body>
+    <h1>Módulo I - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <!--Índice dos módulos-->
+    <h2><a id="indice">Índice</a></h2>
+    <ul>
+      <li><a href="#comunicacao">Entendendo Comunicação Client X Server</a></li>
+      <small>
+      <ol>
+         <li><a href="#historia">História da Web</a></li>
+         <li><a href="#clients">O que são <i>Clients?</i></a></li>
+         <li><a href="#servers">O que são <i>Servers?</i></a></li>
+         <li><a href="#linguagens">Sobre Linguagens de Programação Web</a></li>
+      </ol>
+      </small>
+    </ul>
+
+    <ul>
+      <li><a href="#pratica">Aprendendo HTML na Prática</a></li>
+      <small>
+      <ul>
+         <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+         <li><a href="#tags">Tags e Atributos</a></li>
+         <li><a href="#tabelas">Tabelas</a></li>
+      </ul>
+      </small>
+    </ul>
+
+    <!--Módulo 1-->
+   <h2 id="comunicacao">Entendendo Comunicação Client X Server</h2>
+   <ol>
+      <li>
+         <!--Nome do Tópico-->
+         <h3 id="historia">História da Web</h3>
+
+         <!--Subtópico de História da Web-->
+         <h4><u>Surgimento dos Computadores</u></h4>
+
+         <!--Lista com os conteúdos do subtópico-->
+         <ul>
+            <li>
+               <p>
+                  <strong>Primeira Geração:</strong>
+                  <br />
+                  Mark I - 1944 | Colossus - 1946
+                  <br />
+                  Ambos foram criados para execução de cálculos, relacionados à <i>2˚ Guerra Mundial</i>. Os primeiros computadores eram muito grandes e pesavam toneladas.
+                  Nesse período surgiu o termo <i>BUG</i>, pois as válvulas dos computadores esquentavam e atraiam insetos, algumas vezes elas quebravam e o termo "deu Bug" se popularizou.
+               </p>
+            </li>
+            <li>
+               <p>
+                  <strong>Segunda Geração:</strong>
+                  <br />
+                  Houve um avanço de hardware das válvulas para os <i>transistores</i>, o que permitiu a construção de computadores menores, chamados de <i>portáteis</i> na época.
+               </p>
+            </li>
+            <li>
+               <p>
+                  <strong>Terceira Geração:</strong>
+                  <br />
+                  Houve o desenvolvimento de computadores que usavam os <i>Circuitos Interados</i>, ou Chips. Foi possível o desenvolvimentos deles pela utilização de <i>semicondutores</i>. Um Chip contém transistores, capacitores e resistores.
+               </p>
+            </li>
+            <li>
+               <p>
+                  <strong>Quarta Geração:</strong>
+                  <br />
+                  Utilização de microprocessadores. Essa geração é marcada pelos <i>PCs</i>, Computadores Pessoais, e pela <i>popularização</i> dos computadores para uso pessoal. Para isso, houve a criação de interface gráfica e dispositivos como o mouse. Nomes importantes nessa geração incluem Steve Jobs e Bill Gates.
+               </p>
+            </li>
+            <li>
+               <p>
+                  <strong>Quinta Geração:</strong>
+                  <br />
+                  Marcada pelos computadores quanticos, criptomoedas, metaverso e pela inteligência artificial.
+               </p>
+            </li>
+            <a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/#:~:text=Primeira%20Geração%20(1951%2D1959)&Um%20exemplo%20é%20o%20ENIAC,quilowatts%20e%20possuía%2019.000%20válvulas">Toda Matéria</a>
+         </ul>
+
+         <!--Subtópico de História da Web-->
+         <h4><u>História da Internet</u></h4>
+         <ul>
+            <li>
+               <p><strong>Sistemas de Comunicação</strong>
+               <br />
+               Telégrafo | Cabos Intercontinentais - 1958 
+               <br />
+               Guerra Fria - 1950
+               <br />
+               Foi o período de rivalidade entre as duas potências mundiais: USA e URSS.
+               A DARPA surgiu nesse momento, Defense Advanced Research Projects Agency.
+               Licklider foi quem teorizou sobre uma rede de comunicação. 
+               Surgiu a Arpanet, que  utilizava sistema de comunicação de pacotes.
+               <br />
+               A primeira conexão estabelecida foi em 1969, entre a UCLA e SRI,, a palavra LOGIN foi enviada, mas a conexão caiu, chegando somente 'LO'. 
+               <br />
+               Foi criado o TCP/IP e surgiram outras redes (milnet, nsfnet, esnet, nasa). Além disso, Tim Berners-Lee criou a World Wide Web (www), em 1989.
+               </p>
+            </li>
+            <li>
+               <p><strong>Grandes Nomes:</strong>
+               
+               <ul>
+                  <strong><i>Grace Murray Hopper</i></strong>
+                  <li>Uma das primeiras programadoras do Mark 1</li>
+                  <li>Criadora da linguagem de programação de alto nível Flow-Matic (base do Cobol)</li>
+                  <li>Trouxe o termo 'bug' para a programação</li>
+               </ul>
+               <br />
+               <ul>
+                  <strong><i>Joseph Licklider</i></strong>
+                  <li>Cria a teoria da rede de comunicação</li>
+                  <li>Recrutado pela DARPA</li>
+                  <li>Teorizou sobre a comunicação entre computadores em dois pontos distintos</li>
+               </ul>
+               <br />
+               <ul>
+                  <strong><i>Robert Kahn</i></strong>
+                  <li>Co-criador do TCP/IP</li>
+                  <li>Primeiro a implantar o TCP/IP na ARPANET</li>
+                  <li>Apresentou o primeiro e-mail</li>
+               </ul>
+               <br />
+               <ul>
+                  <strong><i>Tim Berners-Lee</i></strong>
+                  <li>Inventor do WWW</li>
+                  <li>Popularizou o HTML e HTTP</li>
+                  <li>Diretor do WWW (W3C)</li>
+               </ul>
+               <br />
+               <ul>
+                  <strong><i>Marc Andreessen</i></strong>
+                  <li>Tornou o navegador amigável</li>
+                  <li>Criou o Netscape a partir do Mosaic</li>
+               </ul>
+               <br />
+               <ul>
+                  <strong><i>Bill Gates</i></strong>
+                  <li>Fundador da Microsoft</li>
+                  <li>Sua equipe criou o Internet Explorer</li>
+                  <li>Tornou acessível para todos o computador</li>
+               </ul>
+               <br />
+               <ul>
+                  <strong><i>Steve Jobs</i></strong>
+                  <li>Fundou a Apple</li>
+                  <li>Popularizou o smartphone, por meio do lançamento do iPhone em 2007</li>
+               </ul>
+               </p>
+            </li>
+         </ul>
+         
+         <a href="#indice">Voltar ao Índice</a>
+      </li>
+
+      <li>
+         <h3 id="clients">O que são <i>Clients</i>?</h3>
+         <p>Cliente é a máquina que consome as informações vindas do servidor, eles recebem arquivos estáticos  (HTML, CSS, Javascript, Imagens).
+            <br />
+            Preocupações do lado do cliente são design, responsividade e compatibilidade.
+            <br />
+            O navegador (ou browser) é o programa responsável por executar arquivos, seguem padrões W3C.
+            <br />
+            Aplicações Web são soluções criadas que possuem a internet como meio de comunicação entre Client x Server não sendo necessária a sua instalação.
+         </p>
+         <a href="#indice">Voltar ao Índice</a>
+      </li>
+
+      <li>
+         <h3 id="servers">O que são <i>Servers</i>?</h3>
+         <p>Servidores são as máquinas que servem os clientes. Geralmente tem maior poder de processamento por precisarem servir a vários clientes simultaneamente. Os servidores podem ser de arquivos, segurança, streaming, e-mail e web.
+            <br />
+            Sistemas operacionais para servidores: Windows server, ubuntu, fedora, oracle linux;
+         </p>
+         <a href="#indice">Voltar ao Índice</a>
+      </li>
+    
+      <li>
+         <h3 id="linguagens">Sobre Linguagens de Programação Web</h3>
+         <p>Linguagem de programação é uma linguagem escrita e formal que especifica um comjunto de instruções e regras usadas para gerar programas.
+            <br />
+            Server-side: PHP, Ruby, JavaScript, Java, C#;
+            <br/> 
+            Client-side: JavaScript;
+         </p>
+         <a href="#indice">Voltar ao Índice</a>
+      </li>
+   </ol>
+   
+
+   <h2 id="pratica">Aprendendo HTML na Prática</h2>
+
+   <ul>
+      <li>
+         <h3 id="estrutura">Estrutura básica do HTML</h3>
+         <img src="Estrutura.png" width="device-width" />
+         <a href="#indice">Voltar ao Índice</a>
+      </li>
+      <li>
+         <h3 id="tags">Tags e Atributos</h3>
+         <img src="Revisao.png" width="device-width" />
+         <img src="Revisao2.png" width="device-width" />
+         <a href="#indice">Voltar ao Índice</a>
+      </li>
+      <li>
+         <h3 id="tabelas">Tabelas</h3>
+         <img src="Tabelas.png" width="device-width" />
+         <br />
+         <a href="#indice">Voltar ao Índice</a>
+      </li>
+   </ul>
+</body>
+</html>
